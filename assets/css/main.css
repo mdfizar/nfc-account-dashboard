@@ -1,0 +1,111 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: roboto, arial;
+}
+.nfc-accout-dashboard {
+  width: 380px;
+  overflow-y: scroll;
+  margin: auto;
+  padding: 90px 0px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.nfc-accounthead {
+  background-color: #fed201;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+}
+.nfc-accout-dashboard::-webkit-scrollbar {
+  display: none;
+}
+.nfc-accout-dashboard-head .left .profile button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  background-color: #000;
+}
+.nfc-accout-dashboard-head .left .profile button i {
+  font-size: 18px;
+  margin-left: 1px;
+  margin-top: 1px;
+  color: #fff;
+}
+.nfc-accout-dashboard-head .left .morning-text {
+  font-size: 12px;
+  line-height: 10px;
+  color: rgb(153 137 137);
+}
+.nfc-accout-dashboard-head .right button {
+  border: none;
+  background: none !important;
+}
+.nfc-accout-dashboard-head .right button i {
+  font-size: 21px;
+}
+.nfc-account-no .menu button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  background-color: #ffffff;
+}
+.nfc-account-no .menu button i {
+  font-size: 18px;
+  background: none;
+}
+.option {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 20px;
+}
+.option>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.option>div p {
+  font-size: 15px;
+}
+.option>div span {
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+  background-color: #ecf5fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mycard button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.nfc-account-footer a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nfc-account-footer a:focus {
+  border-bottom: 2px solid red;
+}
+.nfc-account-footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
