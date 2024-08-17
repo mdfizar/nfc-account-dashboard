@@ -43,3 +43,26 @@ if ('getBattery' in navigator) {
     p.textContent = 'Battery status not available';
   }
 */
+
+var accontFooter = document.querySelector(".nfc-account-footer");
+var accountFooterItem = accontFooter.querySelectorAll("a p");
+var largeShortBtn = document.querySelector(".large_short");
+var largeShortBtnIcon = document.querySelector(".large_short i");
+accountFooterItem.forEach(item => {
+  item.style.height ="0px"
+  item.style.overflow ="hidden"
+})
+function largeShort() {
+  accountFooterItem.forEach(item => {
+    if(  item.style.height ==="0px") {
+       item.style.height ="20px"
+       largeShortBtn.style.bottom ="77px";
+       largeShortBtnIcon.style.transform ="rotate(180deg)";
+    } else{
+       item.style.height ="0px"
+       largeShortBtn.style.bottom ="57px";
+       largeShortBtnIcon.style.transform ="rotate(0deg)";
+    }
+
+  })
+}

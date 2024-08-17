@@ -93,19 +93,55 @@ body {
   background-color: #ffffff;
 }
 .nfc-account-footer a {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .nfc-account-footer a:focus {
-  border-bottom: 2px solid red;
+  color: #ff0000;
+}
+.nfc-account-footer a p {
+  transition: all 0.4s ease-in-out;
 }
 .nfc-account-footer {
   position: fixed;
   bottom: 0px;
   left: 0px;
   right: 0px;
+  z-index: 100;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
+.large_short {
+  padding:7px 8px;
+  background: none;
+  position: absolute;
+  right: 0px;
+  bottom: 57px;
+  border: 1px solid rgb(215, 215, 215);
+  border-radius: 3px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+  z-index: 10;
+}
+.large_short i {
+  font-size: 7px;
+  transition: all 0.4s ease-in-out;
+}
+/* .nfc-account-footer a .home-item, .nfc-account-footer a .mybanking-item,
+.nfc-account-footer a .qrcode-item, .nfc-account-footer a .explore-item{
+  position: absolute;
+  bottom: 75px;
+  left: 0px;
+  display: none;
+  background-color: red;
+  width: 430px;
+}
+.home-item {
+  display: block !important;
+} */
